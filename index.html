@@ -9,6 +9,12 @@
 
   <link rel="stylesheet" href="css/index.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!--font-family 1-->
+
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display&display=swap" rel="stylesheet">
+  <!--Title font-family-->
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -18,30 +24,37 @@
 
   <nav>
     <a href=#>Home</a>
-    <a href=#>About</a>
-    <a href=#>Portfolio</a>
-    <a href=#>Contact</a>
+    <a href=#About>About</a>
+    <a href="https://ajablanco.github.io/portfolio-website/">Portfolio</a>
+    <a href=#Contact>Contact</a>
   </nav>
 
   <header>
-    <h1>Aja Blanco</h1>
-    <h3>Full Stack Web Developer</h3>
-    <br>
-    <br>
-    <button>
-      View my Portfolio
-    </button>
+    <img src="ajablanco.png" alt="Photo of Aja">
+    <div>
+      <h1>Aja Blanco</h1>
+      <br>
+      <h3>Full Stack Web Developer</h3>
+      <br>
+      <br>
+      <br>
+      <button type="button">
+        View my Portfolio
+      </button>
+    </div>
   </header>
 
-  <section class="section1">
-    <div>
+  <section class="section1" id="About">
+    <div class="about">
       <h2>About Me</h2>
       <p>
-        I am a full-time student at LAMBDA, studying Full Stack Web Development
+        I am a full-time student at LAMBDA,
+        studying Full Stack Web Development
       </p>
+      <img src="lambda.png" alt="lambdalogo">
     </div>
 
-    <div>
+    <div class="skills">
       <h2>My Skills</h2>
       <ul>
         <li>HTML</li>
@@ -52,51 +65,78 @@
     </div>
   </section>
 
-  <section class="work">
+  <hr>
+
+  <section class="work" >
+    <h2>Work History</h2>
+
     <div class="workdiv">
-      <h2>Work History</h2>
-      <div>
+      <div class="years">
         <h3>Years</h3>
         <ul>
-          <li>1</li>
-          <li>1</li>
-          <li>2</li>
+          <li class="li1">1</li>
+          <li class="li2">1</li>
+          <li class="li1">2</li>
         </ul>
       </div>
 
       <div>
         <h3>Company</h3>
         <ul>
-          <li>
+          <li class="li1">
             Dear Self Skincare
-          </li>
-          <li>AUM Films & Media</li>
-          <li>Apple</li>
+            </liclass="1">
+          <li class="li2">AUM Films & Media</li>
+          <li class="li1">Apple</li>
         </ul>
       </div>
 
       <div>
         <h3>Title</h3>
         <ul>
-          <li>Owner</li>
-          <li>Operations Manager</li>
-          <li>Workshop Facilitator</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Job Description</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="li1">Owner</liclass="1">
+          <li class="li2">Operations Manager</li>
+          <li class="li1">Workshop Facilitator</li>
         </ul>
       </div>
     </div>
   </section>
-<footer>
-  Copyright 2020!
-</footer>
+
+  <section class="contact" id="Contact">
+    <div>
+      <h1>Contact Me</h1>
+      <div class="container">
+        <form action="action_page.php">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </div>
+
+    <img src="cactus.jpg">
+  </section>
+
+  <footer>
+    Copyright 2020!
+  </footer>
+
 </body>
 
 </html>
